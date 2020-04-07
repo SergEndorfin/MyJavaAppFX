@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #636363;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoginController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #1f1f1f; -fx-border-radius: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" rotate="-1.3" style="-fx-background-color: #1f1f1f; -fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="login_label" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="-10.0" prefHeight="65.0" prefWidth="554.0" rotate="1.3" text="&lt; Login &gt;" textAlignment="CENTER" textFill="#f032fa">
+               <font>
+                  <Font name="Ink Free" size="40.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="login_field" focusColor="#34faa2" focusTraversable="false" labelFloat="true" layoutX="137.0" layoutY="83.0" prefHeight="29.0" prefWidth="323.0" promptText="Enter your login, pls" rotate="1.3" styleClass="text-field" stylesheets="@../styles/textFieldStyles.css" unFocusColor="#f032fa" />
+            <Label layoutX="152.0" layoutY="297.0" rotate="1.3" style="-fx-padding: 1;" text="Are you a new user? So... " textFill="#839a93">
+               <font>
+                  <Font name="Ink Free" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="login_btn" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="230.0" layoutY="209.0" prefHeight="0.0" prefWidth="119.0" ripplerFill="#2ef0b2" rotate="1.3" style="-fx-background-color: #333232; -fx-background-radius: 15; -fx-border-radius: 15;" text="Login" textFill="#da5757">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="signup_btn" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="325.0" layoutY="300.0" onAction="#changeSceneButtonPushed" prefHeight="0.0" prefWidth="119.0" ripplerFill="#2ef0b2" rotate="1.3" style="-fx-background-color: #333232; -fx-background-radius: 15; -fx-border-radius: 15;" text="Sign Up" textFill="#da5757">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="wrongLogin_login" layoutX="35.0" layoutY="87.0" prefHeight="17.0" prefWidth="89.0" rotate="1.3" textFill="#d73838" />
+            <Label fx:id="wrongPass_login" layoutX="34.0" layoutY="159.0" prefHeight="17.0" prefWidth="89.0" rotate="1.3" textFill="#d73838" />
+            <JFXPasswordField fx:id="LoginPassword_field" focusColor="#34faa2" focusTraversable="false" labelFloat="true" layoutX="135.0" layoutY="156.0" prefHeight="35.0" prefWidth="323.0" promptText="Enter your password, pls" rotate="1.3" styleClass="text-field" stylesheets="@../styles/textFieldStyles.css" unFocusColor="#f032fa" />
+            <ImageView fx:id="img1_red" fitHeight="54.0" fitWidth="33.0" layoutX="369.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

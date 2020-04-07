@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #636363;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SignUpController">
+    <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #1f1f1f; -fx-border-radius: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Pane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" rotate="-1.3" style="-fx-background-color: #1f1f1f; -fx-background-radius: 5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label fx:id="SignUp_label" alignment="TOP_CENTER" layoutX="32.0" layoutY="-10.0" prefHeight="27.0" prefWidth="522.0" rotate="1.3" text="&lt; Sign Up &gt;" textFill="#f032fa">
+                    <font>
+                        <Font name="Ink Free" size="40.0" />
+                    </font>
+                </Label>
+                <JFXTextArea fx:id="signUpLogin_field" focusColor="#34faa2" focusTraversable="false" labelFloat="true" layoutX="137.0" layoutY="77.0" prefHeight="29.0" prefWidth="323.0" promptText="Enter your login, pls" rotate="1.3" styleClass="text-field" stylesheets="@../styles/textFieldStyles.css" unFocusColor="#f032fa" />
+                <JFXTextArea fx:id="signUpEmail_field" focusColor="#34faa2" focusTraversable="false" labelFloat="true" layoutX="136.0" layoutY="140.0" prefHeight="29.0" prefWidth="323.0" promptText="Enter your email, pls" rotate="1.3" styleClass="text-field" stylesheets="@../styles/textFieldStyles.css" unFocusColor="#f032fa" />
+                <Label layoutX="137.0" layoutY="329.0" rotate="1.3" style="-fx-label-padding: 1;" text="Do you have an accaunt? So... " textFill="#839a93">
+                    <font>
+                        <Font name="Ink Free" size="14.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="signUp_btn" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="228.0" layoutY="283.0" prefHeight="0.0" prefWidth="119.0" ripplerFill="#2ef0b2" rotate="1.3" style="-fx-background-color: #333232; -fx-background-radius: 15; -fx-border-radius: 15;" text="Sign Up" textFill="#da5757">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="login_btn" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="335.0" layoutY="333.0" onAction="#changeSceneButtonPushed" prefHeight="0.0" prefWidth="119.0" ripplerFill="#2ef0b2" rotate="1.3" style="-fx-background-color: #333232; -fx-background-radius: 15; -fx-border-radius: 15;" text="Login" textFill="#da5757">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </JFXButton>
+            <JFXCheckBox fx:id="check_Box" checkedColor="#074a92" focusTraversable="false" layoutX="241.0" layoutY="252.0" rotate="1.3" selected="true" text=" ">
+               <graphic>
+                  <Hyperlink fx:id="termsOfUse_link" focusTraversable="false" text="Terms of use" />
+               </graphic>
+            </JFXCheckBox>
+            <Label fx:id="wrongLogin_SUp" layoutX="34.0" layoutY="80.0" prefHeight="17.0" prefWidth="89.0" rotate="1.3" textFill="#d73838" />
+            <Label fx:id="wrongEmail_SUp" layoutX="33.0" layoutY="144.0" prefHeight="17.0" prefWidth="89.0" rotate="1.3" textFill="#d73838" />
+            <Label fx:id="wrongPass_SUp" layoutX="32.0" layoutY="208.0" prefHeight="17.0" prefWidth="89.0" rotate="1.3" textFill="#d73838" />
+            <Label fx:id="termsUnsigned_SUp" layoutX="99.0" layoutY="252.0" prefHeight="17.0" prefWidth="129.0" rotate="1.3" textFill="#d73838" />
+            <JFXPasswordField fx:id="signUpPassword_field" focusColor="#34faa2" focusTraversable="false" labelFloat="true" layoutX="136.0" layoutY="205.0" prefHeight="35.0" prefWidth="323.0" promptText="Enter your password, pls" rotate="1.3" styleClass="text-field" stylesheets="@../styles/textFieldStyles.css" unFocusColor="#f032fa" />
+            <ImageView fx:id="img1" fitHeight="54.0" fitWidth="33.0" layoutX="379.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" rotate="1.3" />
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+    </children>
+</AnchorPane>
